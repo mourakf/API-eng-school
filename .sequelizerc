@@ -2,7 +2,7 @@ const path = require('path');
 
 // declarar os caminhos dos arquivos
 module.exports = {
-    'config': path.resolve('config', '../../config.json/'),
+    'config': path.resolve('./api/config'),
     'models-path': path.resolve('./api/models'),
     'seeders-path': path.resolve('./api/seeders'),
     'migrations-path': path.resolve('./api/migrations')

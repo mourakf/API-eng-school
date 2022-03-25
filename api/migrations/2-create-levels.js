@@ -12,15 +12,15 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING
       },
-      class_id: {
-        allowNull: false,
-        type: Sequelize.INTEGER,
-        // referencia pelo modelo e qual chave a ser associado
-        references: {
-          model: 'Class',
-          key: 'id'
-        }
-      },
+      // class_id: {
+      //   allowNull: false,
+      //   type: Sequelize.INTEGER,
+      //   // referencia pelo modelo e qual chave a ser associado
+      //   references: {
+      //     model: 'Classes',
+      //     key: 'id'
+      //   }
+      // },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

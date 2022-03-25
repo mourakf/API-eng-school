@@ -13,16 +13,12 @@ module.exports = (sequelize, DataTypes) => {
       People.hasMany(models.Enrollments, {
         foreignKey: "teacher_id"
       })
-      People.hasMany(models.Classes, {
-        foreignKey: "student_id"
-      })
+      // People.hasMany(models.Classes, {
+      //   foreignKey: "student_id"
+      // })
 
-      People.belongsTo(models.Classes, {
-        foreignKey: "class_id"
-      })
-      People.belongsTo(models.Enrollments, {
-        foreignKey: "enroll_id"
-      })
+      models.Classes.belongsTo(models.People)
+      models.Enrollments.belongsTo(models.People)
     }
 
   }
